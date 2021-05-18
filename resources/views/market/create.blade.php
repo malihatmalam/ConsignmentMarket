@@ -29,7 +29,7 @@
                 <td>Harga</td><td><input type="text" class="form-control" name="harga"></td>
             </tr>
             <tr>
-                <td>Tgl Ditambahkan</td><td class="date"><input type="text" class="form-control" class="date"  name="tgl_ditambahkan"></td>
+                <td>Tgl Ditambahkan</td><td><input type="text" class="form-control date"  name="tgl_ditambahkan"></td>
             </tr>
             <tr>
                 <td></td>

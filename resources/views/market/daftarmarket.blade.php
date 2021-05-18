@@ -13,7 +13,9 @@
             <p>
                 <h5>{{ $data->produkl }}</h5><a>
                 {{ $data->produk }}<br></a>
-                Harga : {{ $data->harga }}
+                Harga : {{ $data->harga }}<br>
+                Kondisi : {{ $data->kondisi }}<br>
+                Deskripsi : {{ $data->deskripsi }}
             </p>
         </div>
         @endforeach

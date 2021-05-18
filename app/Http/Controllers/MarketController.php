@@ -14,7 +14,6 @@ class MarketController extends Controller
         $this->middleware('auth');
     }
 
-
     //fungsi index
     public function index(){
         $batas = 10;
@@ -91,7 +90,6 @@ class MarketController extends Controller
             'deskripsi' => 'required|string',
             'foto'=>'required|image|mimes:jpeg,jpg,png',
             'harga' => 'required|numeric',
-            'tgl_ditambahkan' => 'required|date',
         ]);
 
         $market = Market::find($id);
@@ -99,7 +97,6 @@ class MarketController extends Controller
         $market->kondisi = request('kondisi');
         $market->deskripsi = request('deskripsi');
         $market->harga = request('harga');
-        $market->tgl_ditambahkan = request('tgl_ditambahkan');
         if (request('foto')!= null){
             File::delete('images/'.$market->foto);
 
