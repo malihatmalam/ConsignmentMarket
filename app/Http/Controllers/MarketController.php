@@ -40,6 +40,7 @@ class MarketController extends Controller
     public function create(){
         return view('market.create');
     }
+
     //fungsi store
     public function store(Request $request){
 
@@ -67,6 +68,7 @@ class MarketController extends Controller
 
         return redirect('/market')->with('pesan','Data Buku Berhasil di Simpan');
     }
+
     //Fungsi Destroy
     public function destroy($id){
         $market=Market::find($id);
@@ -76,6 +78,7 @@ class MarketController extends Controller
 
         return redirect('/market')->with('pesan','Data Buku Berhasil di Hapus');
     }
+    
     //Fungsi Edit
     public function edit($id){
         $market=Market::find($id);
